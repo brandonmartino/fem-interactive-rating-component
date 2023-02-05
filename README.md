@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/interactive-rating-card-with-dom-manipulation-and-flexbox-E2-ef9dhcR)
 - Live Site URL: [Live URL](fem-interactive-ratings-bmm.netlify.app)
 
 ## My process
