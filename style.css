@@ -44,8 +44,15 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 100vh;
     max-width: 27.5rem;
+  }
+  #card .hidden {
+    display: none;
   }
   #card .rating {
     width: 90%;
@@ -106,6 +113,7 @@ button {
   #card .rating ul li button:hover {
     background-color: var(--orange);
     color: #f1f1f1;
+    cursor: pointer;
   }
   #card .rating ul li button .rating-selected {
     background-color: var(--medium-grey);

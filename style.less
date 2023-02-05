@@ -32,14 +32,23 @@ button {
     font-family: inherit;
 }
 
+
+
+
+
 /* Mobile */
 @media only screen and (min-width: 0em) {
     #card {
-        
+
         display: flex;
+        flex-direction: column;
         height: 100vh;
         max-width: 27.5rem;
-        
+
+        .hidden {
+            display: none;
+        }
+
         .rating {
             
             width: 90%;
@@ -101,6 +110,7 @@ button {
                         &:hover {
                             background-color: var(--orange);
                             color: #f1f1f1;
+                            cursor: pointer;
                         }
 
                         .rating-selected {
@@ -134,6 +144,7 @@ button {
         }
 
         .thanks {
+            
             width: 90%;
             height: 24rem;
             justify-content: center;
@@ -187,10 +198,15 @@ button {
                 color: var(--medium-grey);
                 text-align: center;
             }
-
-              
+    
+                  
+            
+    
         }
+        
     }
+
+    
        
 }
 
