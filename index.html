@@ -20,7 +20,9 @@
   <!-- Rating state start -->
     <section id="card">
       <div class="rating">
+        <div class="icon-image">
           <img  src="/images/icon-star.svg" alt="orange star" >
+        </div>  
         <h1>How did we do?</h1>
 
         <p>
@@ -28,14 +30,14 @@
         </p>
         
           <ul>
-            <li><button class="btn">1</button></li>
-            <li><button class="btn">2</button></li>
-            <li><button class="btn">3</button></li>
-            <li><button class="btn">4</button></li>
-            <li><button class="btn">5</button></li>
+            <li><button id="1" class="btn">1</button></li>
+            <li><button id="2" class="btn">2</button></li>
+            <li><button id="3" class="btn">3</button></li>
+            <li><button id="4" class="btn">4</button></li>
+            <li><button id="5" class="btn">5</button></li>
           </ul>
         
-        <button class="btn-submit">Submit</button>
+        <button id="submit"class="btn-submit">Submit</button>
       </div>
     </section>
   <!-- Rating state end -->
@@ -43,16 +45,22 @@
   <!-- Thank you state start -->
   <section id="card">
     <div class="thanks">
-      <img src="/images/illustration-thank-you.svg" alt="form submission" width="162" height="108">
-      <p>
-      You selected <!-- Add rating here --> out of 5
-      </p>
-      <h2>Thank you!</h2> 
-      <p>
-        We appreciate you taking the time to give a rating. If you ever need more support, 
-        don't hesitate to get in touch!
-      </p>
-
+      <div class="thanks-img">
+        <img src="/images/illustration-thank-you.svg" alt="form submission">
+      </div>  
+      <div class="rating-answer">
+        <p class="target">
+        You selected <span>5</span> out of 5
+        </p>
+      </div>  
+      <div class="context">  
+        <h2>Thank you!</h2> 
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support, 
+          don't hesitate to get in touch!
+        </p>
+      </div>
+      
     </div>
   </section>
   </main>

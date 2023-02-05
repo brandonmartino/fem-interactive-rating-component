@@ -17,6 +17,15 @@ body, html {
     font-family: 'Overpass', sans-serif;
     font-size: 15px;
     background-color: var(--very-dark-blue);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 button {
@@ -29,23 +38,31 @@ button {
         
         display: flex;
         height: 100vh;
+        max-width: 27.5rem;
         
         .rating {
-            background-color: var(--dark-blue);
+            
             width: 90%;
             height: 24rem;
             justify-content: center;
             padding: 1.4rem;
             margin: auto;
             border-radius: 1rem;
-            background: -webkit-linear-gradient(bottom, #1B1E22, #1D242B);
-            background: -moz-linear-gradient(bottom, #1B1E22, #1D242B);
-            background: linear-gradient(to top, #1B1E22, #1D242B);
+            background-image: linear-gradient(
+                15deg, 
+                hsl(216, 12%, 8%) -50%,
+                hsl(213, 25%, 18%) 100%
+            );
 
-            img {
-                background-color: hsl(216, 12%, 18%);
-                padding: .75rem;
+            .icon-image {
+                display: inline-block;
+                padding: .825rem;
                 border-radius: 50%;
+                background-color: hsl(216, 12%, 21%);
+
+                img {
+                    width: 1rem;
+                }
             }
 
             h1 {
@@ -79,6 +96,17 @@ button {
                         background-color: var(--dark-blue);
                         border: none;
                         color: var(--medium-grey);
+                        transition: .3s;
+                    
+                        &:hover {
+                            background-color: var(--orange);
+                            color: #f1f1f1;
+                        }
+
+                        .rating-selected {
+                            background-color: var(--medium-grey);
+                            color: #f1f1f1;
+                        }
                     }               
                 }
                 
@@ -86,15 +114,81 @@ button {
 
             .btn-submit {
                 width: 100%;
-                border-radius: 3rem;
+                font-size: 1rem;
+                border-radius: 1.875rem;
                 border: none;
                 background-color: var(--orange);
                 color: hsl(0, 0%, 90%);
-                letter-spacing: .15rem;
+                letter-spacing: .1rem;
                 height: 2.825rem;
                 text-transform: uppercase;
                 font-weight: 400;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover { 
+                    background-color: #f1f1f1;
+                    color:var(--orange);
+                }
             }
+        }
+
+        .thanks {
+            width: 90%;
+            height: 24rem;
+            justify-content: center;
+            padding: 1.4rem;
+            margin: auto;
+            border-radius: 1rem;
+            background-image: linear-gradient(
+                15deg, 
+                hsl(216, 12%, 8%) -50%,
+                hsl(213, 25%, 18%) 100%
+            );
+
+            .thanks-img {
+                text-align: center;
+                display: block;
+                
+                img {
+                    width: 9rem;
+                    margin: auto;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .rating-answer {
+                background-color: var(--dark-blue);
+                color: hsla(25, 97%, 53%, 0.728);
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                font-weight: 400;
+                width: 12rem;
+                height: 2rem;
+                margin: 1.5rem auto;
+                text-align: center;
+                font-size: inherit;
+                line-height: 2rem;
+                border-radius: 5rem;
+                padding-top: .25rem;
+
+                
+            }
+
+            .context h2 {
+                color: #f1f1f1;
+                text-align: center;
+                margin: 1.75rem auto .825rem auto;
+            }
+
+            .context p {
+                color: var(--medium-grey);
+                text-align: center;
+            }
+
+              
         }
     }
        
