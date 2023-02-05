@@ -110,7 +110,8 @@ button {
     -webkit-transition: .3s;
     transition: .3s;
   }
-  #card .rating ul li button:hover {
+  #card .rating ul li button:hover,
+  #card .rating ul li button .active {
     background-color: var(--orange);
     color: #f1f1f1;
     cursor: pointer;
